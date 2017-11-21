@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <script
+     src="https://code.jquery.com/jquery-3.2.1.js"
+     integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+     crossorigin="anonymous"></script>
+    <title>AJAX-Materialize</title>
+
+  </head>
+  <body>
+    <div class="row">
+        <form method="post">
+        <div class="col s4 offset-s1 input-field">
+            <label for="first_name">Nombre</label>
+            <input type="text" name="first_name" required id="first_name" class="validate">
+        </div>
+
+        <div class="col s4 offset-s1 input-field">
+            <label for="last_name">Apellido</label>
+            <input type="text" name="last_name" required id="last_name" class="validate">
+        </div>
+
+        <div class="col s6 offset-s1">
+            <label for="" class="col s12">Sabes programar?</label>
+            <input type="radio" name="sabe_programar" id="si" value="si">
+            <label for="si">Si</label>
+            <input type="radio" name="sabe_programar" id="no" value="no">
+            <label for="no">No</label>
+        </div>
+
+        <div class="col s6 offset-s1">
+            <label>Lenguajes:</label> <br>
+
+            <input type="checkbox" name="languages" id="node" value="node">
+            <label for="node">NodeJS</label> <br>
+
+            <input type="checkbox" name="languages" id="php" value="php">
+            <label for="php">PHP</label> <br>
+
+            <input type="checkbox" name="languages" id="phyton" value="phyton">
+            <label for="phyton">Phyton</label> <br>
+
+            <input type="checkbox" name="languages" id="ruby" value="ruby">
+            <label for="ruby">Ruby</label> <br>
+
+            <input type="checkbox" name="languages" id="no_sabe" value="no_sabe">
+            <label for="no_sabe">No sé programar</label> <br>
+        </div>
+        <div class="input-field col s9 offset-s1">
+            <textarea id="textarea1" class="materialize-textarea" data-length="50"></textarea>
+            <label for="textarea1">Deja tu comentario:</label>
+        </div>
+
+        <input type="submit" name="submit" value="Registrar" class="col s9 offset-s1 btn waves-effect waves-light">
+        </form>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+  </body>
+</html>
