@@ -7,20 +7,21 @@ $(document).ready(function () {
     
         var last_name = $('#last_name').val();
     
-        var gender = $('input[name="gender"]:checked').val();
+        var sabe_programar = $('input[name="sabe_programar"]:checked').val();
     
-        var interest = $('input[name="interest"]:checked'); 
+        var languages = $('input[name="languages"]:checked'); 
 
         var comment = $('#textarea1').val();
     
         var payload = {
             'first_name' : first_name,
             'last_name' : last_name,
-            'gender' : gender,
+            'sabe_programar' : sabe_programar,
             'comment' : comment,
-            'interest' : interest.map(function(i, element){
+            'languages' : languages.map(function(i, element){
                 return $(element).val();
-            }).get()
+            }).get(),
+            'comment' : comment
         }
     
         $.ajax('/find' , {
