@@ -16,6 +16,7 @@ app.post("/find", (request, response) => {
     console.log(request.body.sabe_programar);
     console.log(request.body.languages);
     console.log(request.body.comment);
+    console.log(request.body.carreer);
     response.json({"method": "post", "success": true});
 
 });

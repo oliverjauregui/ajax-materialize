@@ -4,3 +4,11 @@
 .col{
     margin-bottom: 13px;
 }
+
+.submit{
+	width: 100%;
+}
+
+#message span{
+	display: block;
+}
